@@ -14,12 +14,13 @@ namespace ejercicio_3
 {
     public partial class frmIntroducirCirculo : Form
     {
+        private List<Figura> _listaFiguras;
 
-        public frmIntroducirCirculo()
+        public frmIntroducirCirculo(List<Figura> listaFiguras)
         {
+            _listaFiguras = listaFiguras;
             InitializeComponent();
         }
-        List<Figura> listaFiguras = new List<Figura>();
 
         //subprograma para obtener datos del círculo
         void obtenerCirulo(out int posX, out int posY, out string color, out int radio)
@@ -28,7 +29,7 @@ namespace ejercicio_3
             posY = int.Parse(txtPosicionY.Text);
             color = txtColor.Text;
             radio = int.Parse(txtRadio.Text);
-            
+
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -45,14 +46,15 @@ namespace ejercicio_3
             int posX, posY, radio;
             string color;
 
-             //para obtener datos del círculo
-             obtenerCirulo(out posX, out posY, out color, out radio);
+            //para obtener datos del círculo
+            obtenerCirulo(out posX, out posY, out color, out radio);
 
-             //nuevo objeto
-             Circulo circulo = new Circulo(posX, posY, color, radio);
+            //nuevo objeto
+            Circulo circulo = new Circulo(posX, posY, color, radio);
 
-             //añadir a la lista de FIGURAS
-             listaFiguras.Add(circulo);
+            //añadir a la lista de FIGURAS
+            _listaFiguras.Add(circulo);
+            DialogResult = DialogResult.OK;
         }
     }
 }

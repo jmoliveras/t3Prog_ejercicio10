@@ -44,63 +44,78 @@
             this.groupBox2.Controls.Add(this.btnMostrarCuadrados);
             this.groupBox2.Controls.Add(this.btnMostrarCirculos);
             this.groupBox2.Controls.Add(this.btnMostrarFiguras);
-            this.groupBox2.Location = new System.Drawing.Point(410, 33);
+            this.groupBox2.Location = new System.Drawing.Point(364, 26);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(316, 373);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(281, 298);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
             // btnMostrarCuadrados
             // 
-            this.btnMostrarCuadrados.Location = new System.Drawing.Point(39, 264);
+            this.btnMostrarCuadrados.Location = new System.Drawing.Point(35, 211);
+            this.btnMostrarCuadrados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMostrarCuadrados.Name = "btnMostrarCuadrados";
-            this.btnMostrarCuadrados.Size = new System.Drawing.Size(238, 67);
+            this.btnMostrarCuadrados.Size = new System.Drawing.Size(212, 54);
             this.btnMostrarCuadrados.TabIndex = 6;
             this.btnMostrarCuadrados.Text = "Mostrar Cuadrados";
             this.btnMostrarCuadrados.UseVisualStyleBackColor = true;
+            this.btnMostrarCuadrados.Click += new System.EventHandler(this.btnMostrarCuadrados_Click);
+
             // 
             // btnMostrarCirculos
             // 
-            this.btnMostrarCirculos.Location = new System.Drawing.Point(39, 153);
+            this.btnMostrarCirculos.Location = new System.Drawing.Point(35, 122);
+            this.btnMostrarCirculos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMostrarCirculos.Name = "btnMostrarCirculos";
-            this.btnMostrarCirculos.Size = new System.Drawing.Size(238, 67);
+            this.btnMostrarCirculos.Size = new System.Drawing.Size(212, 54);
             this.btnMostrarCirculos.TabIndex = 5;
             this.btnMostrarCirculos.Text = "Mostrar Círculos";
             this.btnMostrarCirculos.UseVisualStyleBackColor = true;
+            this.btnMostrarCirculos.Click += new System.EventHandler(this.btnMostrarCirculos_Click);
             // 
             // btnMostrarFiguras
             // 
-            this.btnMostrarFiguras.Location = new System.Drawing.Point(41, 51);
+            this.btnMostrarFiguras.Location = new System.Drawing.Point(36, 41);
+            this.btnMostrarFiguras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMostrarFiguras.Name = "btnMostrarFiguras";
-            this.btnMostrarFiguras.Size = new System.Drawing.Size(238, 67);
+            this.btnMostrarFiguras.Size = new System.Drawing.Size(212, 54);
             this.btnMostrarFiguras.TabIndex = 4;
             this.btnMostrarFiguras.Text = "Mostrar Todas Las Figuras";
             this.btnMostrarFiguras.UseVisualStyleBackColor = true;
+            this.btnMostrarFiguras.Click += new System.EventHandler(this.btnMostrarFiguras_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnIntroducirCuadrado);
             this.groupBox1.Controls.Add(this.btnIntroducirCirculo);
-            this.groupBox1.Location = new System.Drawing.Point(48, 33);
+            this.groupBox1.Location = new System.Drawing.Point(43, 26);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(316, 373);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(281, 298);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // btnIntroducirCuadrado
             // 
-            this.btnIntroducirCuadrado.Location = new System.Drawing.Point(39, 236);
+            this.btnIntroducirCuadrado.Location = new System.Drawing.Point(35, 189);
+            this.btnIntroducirCuadrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIntroducirCuadrado.Name = "btnIntroducirCuadrado";
-            this.btnIntroducirCuadrado.Size = new System.Drawing.Size(238, 67);
+            this.btnIntroducirCuadrado.Size = new System.Drawing.Size(212, 54);
             this.btnIntroducirCuadrado.TabIndex = 3;
             this.btnIntroducirCuadrado.Text = "Introducir Cuadrado";
             this.btnIntroducirCuadrado.UseVisualStyleBackColor = true;
+            this.btnIntroducirCuadrado.Click += new System.EventHandler(this.btnIntroducirCuadrado_Click);
+
             // 
             // btnIntroducirCirculo
             // 
-            this.btnIntroducirCirculo.Location = new System.Drawing.Point(39, 51);
+            this.btnIntroducirCirculo.Location = new System.Drawing.Point(35, 41);
+            this.btnIntroducirCirculo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIntroducirCirculo.Name = "btnIntroducirCirculo";
-            this.btnIntroducirCirculo.Size = new System.Drawing.Size(238, 67);
+            this.btnIntroducirCirculo.Size = new System.Drawing.Size(212, 54);
             this.btnIntroducirCirculo.TabIndex = 2;
             this.btnIntroducirCirculo.Text = "Introducir Círculo";
             this.btnIntroducirCirculo.UseVisualStyleBackColor = true;
@@ -108,11 +123,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox2.ResumeLayout(false);
